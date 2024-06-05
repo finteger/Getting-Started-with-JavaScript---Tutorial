@@ -24,6 +24,15 @@
 
    <body>
       <header>
+         <button id="stop">Stop</button>
+         <script>
+            var stopButton = document.getElementById("stop");
+
+            stopButton.addEventListener("click", () =>{
+                  clearInterval(runClock());
+            });
+
+         </script>
          <nav class="horizontal">       
             <ul>
                <li><a href="#">News</a></li>
